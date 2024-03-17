@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-Hant-TW">
+<html lang="zh-tw">
 
 <head>
     <meta charset="UTF-8">
@@ -17,10 +17,21 @@
             font-weight: <weight>;
             font-style: normal;
             background-color: #BFEFFF;
-            text-align: center;
+            text-align: -webkit-center;
             padding-top: 50px;
         }
+        .page-title {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0;
+            color: #888; /* 灰色 */
+        }
 
+        .page-title img {
+            width: 60px;
+            height: auto;
+            margin-right: 10px;
+        }
         .busy-image {
             width:100%;
             max-width: 300px;
@@ -30,10 +41,16 @@
 </head>
 
 <body>
-<h1 class="page-title">國營臺灣鐵路股份有限公司</h1>
-<h2>目前系統忙線中</h2>
-<p>請耐心等候</p>
+
+<h1 class="page-title">
+    <img src="imgs/train.jpg" alt="台鐵企業標誌">
+    國營臺灣鐵路股份有限公司</h1>
+<h2>系統忙碌中</h2>
+<p>親愛的客戶：</p>
+<p>很抱歉,由於系統忙碌中,請稍後再試!</p>
+<p>造成您的不便,敬請見諒!</p>
 <img class="busy-image" src="imgs/busy-bee.jpg" alt="忙碌的圖片">
+<p>客服電話（一般服務諮詢及旅客申訴）：0800-765-888（限市話）02-2191-0096（市話、手機）</p>
 </body>
 
 </html>
